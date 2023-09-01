@@ -11,5 +11,11 @@ def hello():
 def about():
     return render_template('about.html')
 
+@app.route('/kontakkami')
+def contactus():
+    return render_template('mark.html')
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
